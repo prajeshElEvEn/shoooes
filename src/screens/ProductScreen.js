@@ -1,7 +1,9 @@
 import { FlatList, Image, StyleSheet, View } from 'react-native'
 import React from 'react'
-import products from '../data/products'
-const ProductScreen = () => {
+
+const ProductScreen = ({
+    products
+}) => {
     return (
         <FlatList
             data={products}
