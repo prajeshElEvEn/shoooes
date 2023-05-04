@@ -10,6 +10,18 @@ const ShoppingCartScreen = ({ cart }) => {
                 renderItem={({ item }) => (
                     <ListCard cartItem={item} />
                 )}
+                ListFooterComponent={() => (
+                    <View style={styles.totalContainer}>
+                        <View style={styles.row}>
+                            <Text>
+                                Subtotal
+                            </Text>
+                            <Text>
+                                41000 US$
+                            </Text>
+                        </View>
+                    </View>
+                )}
             />
         </View>
     )
@@ -17,4 +29,13 @@ const ShoppingCartScreen = ({ cart }) => {
 
 export default ShoppingCartScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    totalContainer: {
+
+    },
+    row: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+})
