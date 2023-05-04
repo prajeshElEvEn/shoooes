@@ -25,7 +25,7 @@ const ListCard = ({ cartItem }) => {
                             onPress={increaseQuantity}
                             name="minus-circle"
                             size={24}
-                            color="black"
+                            color="gray"
                         />
                         <Text style={styles.quantity}>
                             {cartItem.quantity}
@@ -34,7 +34,7 @@ const ListCard = ({ cartItem }) => {
                             onPress={decreaseQuantity}
                             name="plus-circle"
                             size={24}
-                            color="black"
+                            color="gray"
                         />
                     </View>
                     <Text style={styles.price}>
@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
         marginTop: "auto",
         flexDirection: "row",
         alignItems: "center",
-        // justifyContent: "space-between",
     },
     itemTotal: {
         fontSize: 16,
