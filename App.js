@@ -10,9 +10,6 @@ import Navigation from './src/Navigation';
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <ProductScreen products={products} />
-      <ProductDetailsScreen products={products} />
-      <ShoppingCartScreen cart={cart} /> */}
       <Navigation
         products={products}
         cart={cart}
