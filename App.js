@@ -5,13 +5,18 @@ import cart from './src/data/cart';
 import ProductScreen from './src/screens/ProductScreen';
 import ProductDetailsScreen from './src/screens/ProductDetailsScreen';
 import ShoppingCartScreen from './src/screens/ShoppingCartScreen';
+import Navigation from './src/Navigation';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <ProductScreen products={products} /> */}
-      {/* <ProductDetailsScreen products={products} /> */}
-      <ShoppingCartScreen cart={cart} />
+      {/* <ProductScreen products={products} />
+      <ProductDetailsScreen products={products} />
+      <ShoppingCartScreen cart={cart} /> */}
+      <Navigation
+        products={products}
+        cart={cart}
+      />
       <StatusBar style="auto" />
     </View>
   );
